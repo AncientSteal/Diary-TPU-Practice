@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Ежедневник</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="normalize.css">
+</head>
+<body class="page">
+    <header class="header">
+        <h1 class="header__title">Ваш Дневник</h1>
+    </header>
+    <div class="content">
+        <div class="content__title">
+            <h2>Спланируй свои победы!</h2>
+            <div class="links__container">
+                <h2>Полезные ссылки</h2>
+                <hr class="edge__line">
+                <a href="https://www.techinsider.ru/popmem/1675505-umnoe-planirovanie-5-sposobov-effektivno-i-originalno-vesti-ejednevnik" 
+                target="_blank" class="link">Пять способов эффективно и оригинально вести ежедневник</a>
+                <hr class="edge__line">
+                <a href="https://practicum.yandex.ru/blog/taym-menedzhment-kak-upravlyat-vremenem" 
+                target="_blank" class="link">Тайм-менеджмент: как управлять временем</a>
+                <hr class="edge__line">
+                <a href="https://reya.media/10-ezhednevnikov-dlya-produmannoj-zhizni" 
+                target="_blank" class="link">Десять ежедневников для продуманной жизни</a>
+                <hr class="edge__line">
+            </div>
+        </div>
+        <div class="container">
+            <h2>Список задач:</h2>
+            <button type="button target__add-button" class="button target__add-button">Добавить задачу &#9999;</button>
+            <ol class="targets_container">
+                <li class="card">
+                    <h2 class="card__title">Сходить на мероприятие</h2>
+                    <div class="card__description">
+                        <p class="card__description_text">В среду, время 12:00, будет встреча выпускников.</p>
+                    </div>
+                    <button type="button" class="button card__delete-button">&#10006;</button>
+                </li>
+            </ol>
+        </div>
+    </div>
+  <footer class="footer page__section">
+    <p class="footer__copyright">
+      © 2025 Дневник
+    </p>
+  </footer>
+    <div class="popup">
+        <div class="popup__target">
+            <button type="button" class="popup__close">&#10006;</button>
+            <h3 class="popup__title">Добавить задачу</h3>
+            <form class="popup__form" name="edit-profile" novalidate>
+                <input type="text" name="name" class="popup__input popup__input_type_name" 
+                minlength="1" maxlength="40" placeholder="Моя задача" required>
+                <span class="popup__input-error name-error"></span>
+                <input type="text" name="description" class="popup__input popup__input_type_description" 
+                maxlength="400" minlength="2" placeholder="Занятие" required>
+                <span class="popup__input-error description-error"></span>
+                <input type="date" name="date" class="popup__input popup__input_type_date" required>
+                <span class="popup__input-error date-error"></span>
+                <button type="submit" class="button popup__button">Добавить</button>
+            </form>
+        </div>
+    </div>
+
+    <template id="card-template">
+        <li class="card">
+            <h2 class="card__title"></h2>
+            <span class="card__date"></span>
+            <button type="button" class="button card__delete-button">&#10006;</button>
+            <div class="card__description">
+                <p class="card__description_text"></p>
+            </div>
+        </li>
+    </template>
+    <script src="index.js"></script>
+</body>
+</html>
