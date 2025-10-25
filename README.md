@@ -1,4 +1,4 @@
-# Ежедневник
+# Ежедневник [Перейти на сайт](https://ancientsteal.github.io/Diary-TPU-Practice/)
 
 Данный одностраничный сайт представляет собой «Ежедневник», предназначенный для планирования задач. Позволяет пользователям добавлять и удалять задачи, а также предоставляет доступ к тематическим ресурсам.
 
@@ -62,3 +62,4 @@
 ---
 
 ## ССылка на репрозиторий GitHub: https://github.com/AncientSteal/Diary-TPU-Practice
+## ССылка на GitHub Pages: https://ancientsteal.github.io/Diary-TPU-Practice/
